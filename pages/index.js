@@ -134,7 +134,7 @@ export default class Index extends Component {
 	    },
 	    "retina_detect": true
 	}} />
-  <div style={{position:'absolute'}}>
+  <div>
 
 <div className="text">
 <h1>Linky - a free link shortner</h1>
