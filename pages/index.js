@@ -43,7 +43,7 @@ export default class Index extends Component {
         Loading:true
       },()=>console.log(this.state.disable))
       if(navigator.onLine){
-        fetch('http://www.slimy.me/api/url/shorten', {
+        fetch('https://slimy.me/api/url/shorten', {
           method: 'POST', 
           headers: {
             'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ export default class Index extends Component {
     }
     }else
     {
-      alert('Invalid URL')
+      alert('Invalid URL\n exmaple:www.google.com')
 
     }
      
@@ -139,7 +139,7 @@ export default class Index extends Component {
 <div className="text">
 <h1>Linky - a free link shortner</h1>
 </div>
-<div className='center-item'>
+<div className='center-item' style={{position:'relative'}}>
         <input type='text' className='input-section' onChange={this.handleChange} />
         <button className='btn-p' onClick={this.handelSubmit} disabled={this.state.disable}>
         {
